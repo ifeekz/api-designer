@@ -19,7 +19,7 @@ Route::get('/', function () {
 
 Route::middleware(['web', 'auth'])->get('/dashboard/api-keys', function () {
     return view('dashboard.api-keys');
-});
+})->name('dashboard.api-keys');
 
 Route::middleware([
     'auth:sanctum',

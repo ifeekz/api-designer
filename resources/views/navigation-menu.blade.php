@@ -102,6 +102,13 @@
                                 {{ __('Profile') }}
                             </x-dropdown-link>
 
+                            <x-dropdown-link href="{{ route('dashboard.api-keys') }}">
+                                <svg class="w-4 h-4 mr-2 inline" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 7h.01M6.938 4.938a10 10 0 0114.124 0l.938.938a2 2 0 010 2.828l-1.414 1.414a2 2 0 01-2.828 0l-.938-.938m-2.83 2.83a2 2 0 010 2.828l-5.657 5.657a2 2 0 01-2.828 0l-.707-.707a2 2 0 010-2.828l5.657-5.657a2 2 0 012.828 0z" />
+                                </svg>
+                                API Keys
+                            </x-dropdown-link>
+
                             @if (Laravel\Jetstream\Jetstream::hasApiFeatures())
                                 <x-dropdown-link href="{{ route('api-tokens.index') }}">
                                     {{ __('API Tokens') }}
