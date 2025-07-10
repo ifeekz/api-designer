@@ -23,7 +23,7 @@ A developer-focused platform to build, test, and document APIs using the TALL st
 ## Installation
 
 ```bash
-git clone https://github.com/YOUR-ORG/api-design-best-practices.git
+git clone https://github.com/ifeekz/api-designer.git
 cd api-design-best-practices
 composer install
 cp .env.example .env
