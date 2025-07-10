@@ -14,4 +14,6 @@ Route::prefix('auth')->group(function () {
     // For testing: generate new key (user must be logged in)
     Route::middleware('auth:api')->post('/key/generate', [ApiKeyController::class, 'generate']);
     Route::middleware('auth:api')->get('/key/list', [ApiKeyController::class, 'list']);
+
+    
 });

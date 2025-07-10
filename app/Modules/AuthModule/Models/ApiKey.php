@@ -14,7 +14,7 @@ class ApiKey extends Model
     {
         return self::create([
             'user_id' => $user->id,
-            'key' => Str::random(40),
+            'key' => bin2hex(random_bytes(32)), // Str::random(40),
             'active' => true,
         ]);
     }

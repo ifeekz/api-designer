@@ -16,3 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::middleware(['web', 'auth'])->get('/dashboard/api-keys', function () {
+    return view('dashboard.api-keys');
+});
