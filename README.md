@@ -32,3 +32,35 @@ php artisan migrate
 npm install && npm run dev
 php artisan serve
 ```
+
+## Folder Structure (Modular by Feature)
+
+/app
+│
+├── Modules
+│   ├── AuthModule
+│   │   ├── Controllers/
+│   │   ├── Middleware/
+│   │   ├── Models/
+│   │   ├── Services/
+│   │   └── routes.php
+│   │
+│   ├── WebhookModule
+│   │   ├── Events/
+│   │   ├── Listeners/
+│   │   ├── Models/
+│   │   ├── Controllers/
+│   │   └── routes.php
+│   │
+│   ├── DocsModule
+│   │   ├── Controllers/
+│   │   └── SwaggerConfig/
+│   │
+│   ├── RateLimitModule
+│   │   ├── Middleware/
+│   │   ├── Services/
+│   │   └── Models/
+│
+├── Providers
+│   └── ModuleServiceProvider.php
+
